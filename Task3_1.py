@@ -3,14 +3,14 @@
 
 import random
 
-def fill_list(n=10, min=0, max=100) -> list: 
+def fill_list(n: int, min: int, max: int) -> list: 
     new_list = [random.randint(min, max)]
     for i in range(1, n):
         new_list.append(random.randint(min, max))
         i += 1
     return new_list
 
-def sum_elements_odd_position(user_list):
+def sum_elements_odd_position(user_list) -> int:
     sum_odd = 0
     for i in range(1, len(user_list)):
         if i % 2 != 0:
